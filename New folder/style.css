@@ -1,0 +1,249 @@
+﻿/*
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2025B
+Assessment: Fundamental Programming Challenge
+Author: Your fullname 
+ID: Your student ID (e.g. s1234567)
+*/
+
+/* TODO: Write CSS rules for the Home page and ontact page */
+/*image styles*/  
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+* {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-color: lightgray;
+}  
+#feature{
+    grid-column: 2 / 3; /* changed */
+    grid-row: 1 / -1; /* changed */
+    justify-self: center; /* changed */
+    align-self: center; /* changed */
+    width: 115%; /* changed */
+    max-width: 720px; /* changed */
+    height: auto; /* changed */
+    object-fit: cover; /* changed */
+    display: block; /* changed */
+}
+#slider{
+    height:900px;
+    width: 100%;
+}
+img{
+    height: 300px;
+}
+
+/*container style*/
+.navbar{
+    background-color:darkblue;
+    display: flex;
+    justify-content: space-between;
+    border:solid black 1px;
+    border-radius: 8px;
+}
+.navbar > h1{
+    color: white;
+    background-color: red;
+}
+nav{
+    position: absolute;
+    right: 30px;
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding:20px;
+}
+nav > a{
+    text-decoration:none ;
+    color: white;
+}
+.profile-pane{
+    background-color: gold;
+}
+#profile{
+    border-radius:80%;
+    border:white 2px solid;
+    display: block;
+    margin: 20px auto;
+    
+}
+.profile-pane > h3{
+    text-align: center;
+    color: white;
+    font-size:30px;
+}
+
+/*container style*/
+.unilife{
+    display: grid; /* changed */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); /* changed */
+    align-items: stretch; /* changed */
+    width: 100%; /* changed */
+    background-color: white; /* changed */
+    border-radius: 8px;
+    overflow: hidden; /* changed */
+    margin: 40px auto; /* changed */
+    max-width: 1100px; /* changed */
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12); /* changed */
+}
+
+.unilife h1,
+.unilife p,
+.unilife a{
+    grid-column: 1 / 2; /* changed */
+    padding: 0 40px; /* changed */
+}
+
+.unilife h1{
+    margin: 40px 0 20px; /* changed */
+}
+
+.unilife p{
+    margin: 0 0 20px; /* changed */
+    line-height:2; /* changed */
+}
+
+.unilife a{
+    margin-bottom: 40px; /* changed */
+    font-weight: 600; /* changed */
+    align-self: start; /* changed */
+}
+.content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap:20px;
+
+}
+.div{
+    border:black 1px solid;
+    border-radius: 8px;
+    justify-content: space-between;
+    background-color: white;
+    place-content: center;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+/*table style and contact page style*/
+.body{
+    background-color: lightgray;
+}
+table {
+    width: 100%;
+    height: 300px;
+    transition: 0.3s ease-in-out;
+    margin: auto;
+    color: black;
+    font-weight: bold;
+}
+table td {
+    border: black solid 2px;
+}
+#rows {
+    background-color: white;
+    color: black
+}
+form > h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    color: rgba(red);
+    transition: ease 0, 3s;
+}
+.signup{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+}
+#signup{
+    background-color: white;
+    width:400px;
+    height: 40px;
+}
+.signup > label{
+    font-weight: bold;
+    height:100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.signup > button{
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+    width: 100px;
+    align-items: center;
+    font-size: 30px;
+    
+}
+.signup > #button{
+    align-items: center;
+    width: 200px;
+}
+footer{
+    background-color: darkblue;
+    display: flex;
+   justify-content: center;
+   font-size: 30px;
+   width: 100vw;
+   height: 3vw;
+   color:white;
+}
+footer > span{
+    border-radius: 8px;
+    color:white;
+    background-color: red;
+    font-size: 30px;
+    height: 100%;
+}
+@media screen and (max-width: 768px) {
+    .unilife{
+        grid-template-columns: 1fr; /* changed */
+        margin: 20px 0; /* changed */
+    }
+
+    #feature{
+        grid-column: 1; /* changed */
+        grid-row: 1; /* changed */
+        width: 100%; /* changed */
+        max-width: none; /* changed */
+        height: 260px; /* changed */
+    }
+
+    
+}
+@media screen and (max-width:1024px) {
+    .content{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    #slider{
+        display:none
+    }
+}
+a:nth-child(1):hover,
+a:nth-child(2):hover{
+    background-color: red;
+    border-radius: 8px;
+}

@@ -1,0 +1,79 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2025B
+Assessment: Fundamental Programming Challenge
+Author: Your fullname 
+ID: Your student ID (e.g. s1234567)
+Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tan Phuc's University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+   <div class="navbar">
+        <h1>My University</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="profile-pane">
+        <img src="assets/profile.jpg" alt="profile" id="profile">
+        <h3>Name: Phuc Huynh Tan</h3>
+        <h3>Email: S4103131@rmit.edu.vn</h3>
+    </div>
+    <div class="body">
+        <form action="./submit" method="POST">
+            <h2>My Course</h2>
+            <table>
+                <tr id="rows">
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Credit Point</th>
+            </tr>
+            <tr>
+                <td>COSC3054</td>
+                <td>Programming Bootcamp 1</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>COSC3056</td>
+                <td>Programming Studio 1</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>COSC3058|59</td>
+                <td>Web Programming Bootcamp</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>COSC3060|61</td>
+                <td>Web Programming Studio</td>
+                <td>24</td>
+            </tr>
+            </table>
+
+            <div class="get-in-touch">
+                <h1>Get in touch</h1>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Your name">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required placeholder="s1234567@rmit.edu.vn">
+
+                <label for="cmt">Comment:</label>
+                <textarea id="cmt" name="cmt" rows="8" cols="50" required> </textarea>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+       <footer>Made by <span> Phuc Huynh Tan</span> </footer>
+</div>
+</body>
+</html>
