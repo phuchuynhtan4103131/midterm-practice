@@ -47,6 +47,7 @@ img{
     justify-content: space-between;
     border:solid black 1px;
     border-radius: 8px;
+    
 }
 .navbar > h1{
     color: white;
@@ -60,13 +61,14 @@ nav{
     font-size: 30px;
     font-weight: bold;
     padding:20px;
+    gap:20px;
 }
 nav > a{
     text-decoration:none ;
     color: white;
 }
 .profile-pane{
-    background-color: gold;
+    background-color:darkgoldenrod;
 }
 #profile{
     border-radius:80%;
@@ -139,7 +141,7 @@ nav > a{
     background-color: lightgray;
 }
 table {
-    width: 100%;
+    width:100%;
     height: 300px;
     transition: 0.3s ease-in-out;
     margin: auto;
@@ -153,22 +155,48 @@ table td {
     background-color: white;
     color: black
 }
+table > #submit-btn{
+    width:100%
+}
 form > h2{
     text-align: center;
     font-size: 30px;
 }
-
+/* editing get in touch */
 .get-in-touch{
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     width: 100%;
     height: 100%;
+    font-size: 20px;
+    align-items: center;
 }
-
-button{
-    color: rgba(red);
-    transition: ease 0, 3s;
+.get-in-touch > label{
+    text-align: left;
+}
+.get-in-touch > h1{
+    text-align: center;
+}
+#cmt{
+    text-align: left;
+    width: 100%;
+}
+#fullname{
+    text-align: left;
+    width: 100%;
+    height: 50px;
+}
+#email{
+    text-align: left;
+    width: 100%;
+    height: 50px;
+}
+.get-in-touch > button{
+    background-color: red;
+    width:300px;
+    height: 30px;
+    align-items: center;
+    color:white;
+    text-align: center;
 }
 .signup{
     align-items: center;
@@ -209,14 +237,15 @@ footer{
    width: 100vw;
    height: 3vw;
    color:white;
+   gap:10px
 }
-footer > span{
-    border-radius: 8px;
-    color:white;
+
+#footer{
     background-color: red;
-    font-size: 30px;
-    height: 100%;
+    border-radius:8px;
+    margin: 5px 0 8px;
 }
+
 @media screen and (max-width: 768px) {
     .unilife{
         grid-template-columns: 1fr; /* changed */
@@ -243,7 +272,100 @@ footer > span{
     }
 }
 a:nth-child(1):hover,
-a:nth-child(2):hover{
+a:nth-child(2):hover,
+a:nth-child(3):hover,
+a:nth-child(4):hover{
     background-color: red;
     border-radius: 8px;
+}
+
+/* login page edit */
+form {
+   font: 14px Arial;
+   background-color: #eee;
+   padding: 10px;
+   width: 400px;
+   margin: auto;
+}
+
+form h1 {
+   margin-top: 5px;
+}
+
+.hide {
+	display: none;
+}
+
+#formErrors {
+   color: red;
+}
+
+input[type=text], input[type=email], input[type=password] {
+   width: 400px;
+   padding: 8px;
+   margin-top: 4px;
+   margin-bottom: 12px;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+input[type=text]:focus {
+   background-color: lightblue;
+}
+
+input[type=submit] {
+   width: 100%;
+   color: white;
+   background-color: #09f;
+   padding: 15px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #07d;
+}
+
+input.error  {
+   border: 2px solid red;
+}
+
+
+
+/* Education editing */
+.Education{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size:30px;
+}
+.Education > input{
+    width: 100%;
+    height: 30px;
+}
+.edu-card{
+    background-color: #f5f6ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    list-style: none;
+    gap:8px;
+}
+.edu-card strong {
+  font-size: 1.1rem;
+}
+.edu-card p {
+  margin-top: 0.5rem;
+}
+.remove{
+    font-size: 30px;
+    background-color: black;
+}
+.Education > button {
+    font-size: 30px;
+    background-color: rgb(0, 0, 255);
+    color: white;
 }
