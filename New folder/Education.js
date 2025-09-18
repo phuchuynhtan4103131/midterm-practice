@@ -14,7 +14,7 @@ const educations = [
 ];
 
 const degree = document.getElementById("degree")
-const insitution = document.getElementById("institution")
+const institution = document.getElementById("institution")
 const duration = document.getElementById("duration")
 const description = document.getElementById("description")
 const edu = document.getElementById("education")
@@ -42,17 +42,17 @@ function renderAll(){
 
 function addEdu(){
     const degreeInput = degree.value.trim();
-    const InsitutionInput = insitution.value.trim();
+    const InstitutionInput = institution.value.trim();
     const DurationInput = duration.value.trim();
     const descriptionInput = description.value.trim();
 
-    if(degreeInput === "" || InsitutionInput === "" || DurationInput === "" || descriptionInput === ""){
+    if(degreeInput === "" || InstitutionInput === "" || DurationInput === "" || descriptionInput === ""){
         return;
     }
         
     const newEdu = {
         degree:degreeInput,
-        insitution: InsitutionInput,
+        institution: InstitutionInput,
         duration:DurationInput,
         description:descriptionInput
     };
@@ -60,7 +60,7 @@ function addEdu(){
     renderAll();
     
     degree.value = "";
-    insitution.value = "";
+    institution.value = "";
     duration.value = "";
     description.value = "";
 }
@@ -75,7 +75,7 @@ edu.addEventListener("click", e => {
 });
 
 button.addEventListener("click", addEdu);
-[degree, insitution, duration, description].forEach(input =>
+[degree, institution, duration, description].forEach(input =>
     input.addEventListener("keydown", e =>{
         if(e.key === "Enter") addEdu();
     })
